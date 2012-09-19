@@ -34,11 +34,6 @@ for n in range(-19, 14):
 
         tiles.append(path)
 
-        #if not os.path.exists(target):
-        #    # first image
-        #    print("cp %s %s" % (path, target))
-        #    subprocess.call(["cp", path, target])
-        #else:
     cmd = ["convert"]
     cmd.extend(tiles)
     cmd.append("+append")
