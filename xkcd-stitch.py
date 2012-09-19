@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import subprocess
 import os.path
 
@@ -9,7 +11,7 @@ for n in range(-19, 14):
     else:
         continue
 
-    target = "/tmp/xkcd/stitched/%s.png" % nc
+    target = "images/stitched/%s.png" % nc
 
     tiles = []
 
@@ -24,13 +26,13 @@ for n in range(-19, 14):
             continue
 
         name = name + ".png"
-        path = "/tmp/xkcd/scaled/" + name
+        path = "images/scaled/" + name
         if not os.path.exists(path):
             print(path)
             if n > 0:
-                path = "/tmp/xkcd/scaled/2n1w.png"
+                path = "images/scaled/2n1w.png"
             else:
-                path = "/tmp/xkcd/scaled/11s11e.png"
+                path = "images/scaled/11s11e.png"
 
         tiles.append(path)
 
