@@ -3,7 +3,8 @@
 mkdir -p images/scaled
 mkdir -p images/stitched
 
-for f in `ls images/*.png`
+cd images
+for f in $(ls *.png)
 do
-    convert $f -scale 128x128 images/scaled/$f
+    convert $f -scale 128x128 scaled/$f
 done
