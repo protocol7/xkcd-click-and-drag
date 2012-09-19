@@ -1,0 +1,12 @@
+USAGE
+=====
+
+1. Download the torrent and place the folder of images in the same directory with these scripts
+
+2. Run ./scale.sh to bring everything down to a sane size to stitch. 
+
+3. Run ./xkcd-stitch.py to stitched the scaled images into strips
+
+4. Run ./xkcd-all.sh to stich the strips into a full image.
+
+5. View ./images/stitched/all.png and enjoy!
